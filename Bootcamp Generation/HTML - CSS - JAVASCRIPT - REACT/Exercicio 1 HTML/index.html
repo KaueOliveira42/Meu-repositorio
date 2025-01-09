@@ -6,17 +6,20 @@
 		<meta name="description" content="Projeto Portfólio">
 		<meta name="author" content="Kaue Oliveira">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<!-- Link para a Folha de Estilo da Página - CSS -->
+		<link rel="stylesheet" href="./assets/css/style.css">
 		<title>Perfil - Kaue de Oliveira</title>
 	</head>
+
 	<body>
 		<!-- Cabeçalho da Página (header) -->
 		<header>
 			<!-- Div Conteudo do Cabeçalho -->
-			<div id="header_content">
+			<div id="header_content" class="flex">
 				<!-- Titulo do Cabeçalho -->
 				<div id="titulo">
 					<!-- Seu nome -->
-					<h1>Kaue Olivira</h1>
+					<h1>Kaue Oliveira</h1>
 				</div>
 
 				<!-- Conteudo do Menu da Página (header) -->
@@ -41,21 +44,19 @@
 		<main>
 
 			<!-- Seção Sobre você -->
-			<section id="about">
+			<section id="about" class="flex_start">
 
 				<!-- Título da Seção -->
 				<h2>Sobre Kaue Oliveira</h2>
 
 				<!-- Conteúdo da Seção -->
-				<div id="conteudo">
+				<div id="conteudo" class="flex">
 
 					<!-- Imagem do criador do conteúdo -->
 					<img
 						src="assets/img/foto_perfil.jpg"
 						alt="Foto do criador desse conteudo"
-						width="300" 
-						height="auto"
-						
+						class="img_profile"
 					/>
 
 					<!-- Texto sobre o criador do conteúdo -->
@@ -77,13 +78,13 @@ etc.<br>
 			</section>
 
 			<!-- Seção contendo um vídeo de sua preferência -->
-			<section id="video">
+			<section id="video" class="flex_start">
 				
 				<!-- Título da Seção -->
 				<h2>Meu vídeo favorito:</h2>
 
 				<!-- Vídeo da Seção -->
-				<div class="youtube">
+				<div id="youtube" class="flex">
 					<iframe 
 						width="560" 
 						height="315" 
@@ -101,7 +102,7 @@ etc.<br>
 		</main>
 
 		<!-- Rodapé da Página (footer) -->
-		<footer>
+		<footer class="flex">
 
 			<!-- Seção de Contato - Redes Sociais-->
             <section id="redes_sociais">
